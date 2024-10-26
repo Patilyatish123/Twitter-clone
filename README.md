@@ -26,5 +26,5 @@ To view or modify the project locally:
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/twitter-clone.git
+   git clone https://github.com/Patilyatish123/Twitter-clone
    cd twitter-clone
