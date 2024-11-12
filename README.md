@@ -20,7 +20,7 @@ The project is deployed on Netlify, and you can access it directly from [here](h
 - **JavaScript**: For implementing login and signup functionality with `localStorage`.
 
 ## Getting Started
-###Clone the Repository:
+### Clone the Repository:
 git clone https://github.com/Patilyatish123/Twitter-clone
 
 Open the Project: Open index.html in your preferred browser to view the website.
