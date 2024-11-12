@@ -26,6 +26,8 @@ const user = {
 }
 localStorage.setItem(email,JSON.stringify(user))
    alert("signup succesfully!");
+   window.location.href="../login-page/login.html";
+   return false;
 }
 }
 function mainPage(){
