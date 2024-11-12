@@ -3,7 +3,7 @@
 A basic Twitter clone created with HTML, CSS, and JavaScript to replicate the core layout and functionality of Twitter's web interface. This project includes responsive design, user login, and signup functionality.
 
 ## Project Demo
-###Deployment
+### Deployment
 The project is deployed on Netlify, and you can access it directly from [here](https://twitter-clone-yatishp.netlify.app/).
 
 ## Features
