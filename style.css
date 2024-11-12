@@ -18,7 +18,7 @@ body {
   font-family: var(--font);
   background-color: var(--bg-color);
   overflow: hidden; /* Disable body scrolling */
-  padding: 0 82px 0 127px;
+  padding: 0 70px 0 110px;
 }
 
 .containers {
