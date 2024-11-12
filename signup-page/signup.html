@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body style="background-color: #5B708366;">
+    <div class="main-container">
+        <div class="close">
+            <div class="close-icon" onclick="mainPage()"><i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="twitter-logo"><i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+<div class="container">
+    <div class="text"><h1>Sign in to X</h1></div> 
+<form  method="post"  onsubmit="return saveData()">
+     <div class="box">
+    <input type="name" id="name" name="name" placeholder="Name">
+</div>
+    <div class="box" id="box2">
+        <input type="email" id="email" name="email" placeholder="Email">
+    </div>
+   
+    <div class="box"    id="box2">
+        <input type="Password" name="password" id="password" placeholder="Password">
+    </div>
+    <div class="box"id="box2">
+        <input type="Password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+    </div>
+    <div class="next-btn">
+        <button>Signup</button>
+    </div>
+</form>
+    <div class="forgot-pass" onclick="loginPage()">Already have an account?</div>
+</div>
+</div>
+    <script src="signup.js"></script>
+</body>
+</html>

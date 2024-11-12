@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/icons/twit.jpg" type="image/x-icon" />
+    <title>Twitter clone</title>
+  </head>
+  <body>
+    <div class="containers">
+      <div class="first-container">
+        <div class="container-box1">
+          <div class="logo-container">
+            <div class="logo">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="list">
+              <div class="container">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <div class="text">Home</div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="container">
+                <div class="icons">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="text1">Explore</div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-bell"></i></div>
+                <div class="text1">Notifications</div>
+              </div>
+            </div>
+           
+            <div class="list">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-envelope"></i></div>
+                <div class="text1">Messages</div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-bell"></i></div>
+                <div class="text1">Grooks</div>
+              </div>
+            </div>
+            <div class="list" id="bookmarks">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-bookmark"></i></div>
+                <div class="text1">Bookmarks</div>
+              </div>
+            </div>
+            <div class="list" id="jobs">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-bookmark"></i></div>
+                <div class="text1">Jobs</div>
+              </div>
+            </div>
+            <div class="list" id="communities">
+              <div class="container">
+                <div class="icons"><i class="bi bi-people"></i></div>
+                <div class="text1">Communities</div>
+              </div>
+            </div>
+            <div class="list" id="Premium">
+              <div class="container">
+                <div class="icons"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="text1">Premium</div>
+              </div>
+            </div>
+
+            <div class="list" id="verified_orgs">
+              <div class="container">
+                <div class="icons"><i class="bi bi-lightning"></i></div>
+                <div class="text1">Verified orgs</div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="container">
+                <div class="icons"><i class="fa-regular fa-user"></i></div>
+                <div class="text1">Profile</div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="container">
+                <div class="icons">
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="text1">More</div>
+              </div>
+            </div>
+          </div>
+          <!-- navbar closed -->
+          <div class="post-button">
+            <div class="post-text"><i class="bi bi-feather"></i><span>Post</span></div>
+          </div>
+        </div>
+        <form  method="Post" onclick="login()">
+        <div class="login">
+          <div class="login-icon"><i class="bi bi-person-circle"></i></div>
+          <div class="username">
+            <p class="name" id="display-name" onchange=""></p>
+            <p id="user-name"></p>
+          </div>
+          <div class="more"><i class="bi bi-three-dots"></i></div>
+        </div>
+      </form>
+      </div>
+      <div class="second-container">
+        <div class="section1">
+          
+          <div class="phone-navbar">
+            <div class="login-icon"><i class="bi bi-person-circle"></i></div>
+            <div class="twitter-logo"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="preimium-account">Get Premimun</div>
+          </div>
+          <div class="boxes">
+            <div class="box1"><div>For you</div></div>
+            <div class="box2"><div>Following</div></div>
+          </div>
+       
+          <div class="part1">
+            <div class="column">
+              <div class="login-icon">
+                <i class="bi bi-person-circle"></i>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="colum2-main">
+                <input type="text" placeholder="What is happening?!" />
+              </div>
+              <div class="postsend">
+                <div class="iconsadd">
+                  <i class="bi bi-image"></i>
+                  <i class="bi bi-filetype-gif"></i>
+                  <i class="bi bi-emoji-smile"></i>
+                  <i class="bi bi-emoji-smile"></i>
+                  <i class="bi bi-calendar-event"></i>
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="sendingicons">
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showpost-section">Show 595 post</div>
+          <div class="post1">
+            <div class="user-icon">
+              <img src="/icons/sideimage1.jpg" alt="" />
+            </div>
+            <div class="post-info">
+              <div class="heading">
+                <div class="hashtag">
+                  AssemblyAi <i class="bi bi-patch-check"></i>
+                  <span>@AssemblyAi</span>
+                </div>
+                <div class="hashtag1"><i class="bi bi-three-dots"></i></div>
+              </div>
+              <div>
+                Introducing Universal-1: Our most powerful and accurate Speech
+                AI model yet.
+              </div>
+              <div class="content">
+                <div>
+                  <span
+                    ><img src="done.svg" alt="" /> Trained on 12.5M hours of
+                    multilingual speech data</span
+                  >
+                </div>
+                <div>
+                  <span
+                    ><img src="done.svg" alt="" /> 13.5% more accurate than
+                    models like Whisper</span
+                  >
+                </div>
+                <div>
+                  <span
+                    ><img src="done.svg" alt="" /> Up to 30% fewer
+                    hallucinations than seq2seq models</span
+                  >
+                </div>
+                <div>
+                  <span
+                    ><img src="done.svg" alt="" /> Just 38 seconds to process 1
+                    hour of audio</span
+                  >
+                </div>
+              </div>
+              <div class="post-img"><img src="post/img1.png" alt="" /></div>
+              <p class="bottom-line">From AssemblyAi.com</p>
+              <div>
+                <div class="bottom-icon">
+                  <i class="bi bi-chat">17k</i>
+                  <i class="bi bi-repeat">58k</i>
+                  <i class="bi bi-heart">595k</i>
+                  <i class="bi bi-bar-chart-fill">40M</i>
+                  <div class="upload-icon">
+                  <i class="bi bi-bookmark"></i>
+                  <i class="bi bi-upload"></i>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post2">
+            <div class="user-icon">
+              <img src="icons/elonicon.jpg" alt="" />
+            </div>
+            <div class="post-info">
+              <div class="heading">
+                <div class="hashtag">
+                  Elon Musk <i class="bi bi-patch-check"></i>
+                  <span>@elonmask .16h</span>
+                </div>
+                <div class="hashtag1"><i class="bi bi-three-dots"></i></div>
+              </div>
+              <div>Impressive</div>
+              <div class="post-video">
+                <video src="post/videi1.mp4" controls autoplay muted></video>
+              </div>
+              <p class="bottom-line">From <span>Mario Nawfal</span></p>
+              <div>
+                <div class="bottom-icon">
+                  <i class="bi bi-chat">17k</i>
+                  <i class="bi bi-repeat">58k</i>
+                  <i class="bi bi-heart">586k</i>
+                  <i class="bi bi-bar-chart-fill">40M</i>
+                  <div class="upload-icon">
+                    <i class="bi bi-bookmark"></i>
+                    <i class="bi bi-upload"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post3">
+            <div class="user-icon">
+              <img src="/icons/modi.jpg" alt="" />
+            </div>
+            <div class="post-info">
+              <div class="heading">
+                <div class="hashtag">
+                  Narendra Modi <i class="bi bi-patch-check"></i>
+                  <span>@narendramodi .8h</span>
+                </div>
+                <div class="hashtag1"><i class="bi bi-three-dots"></i></div>
+              </div>
+              <div>
+                In Washim, tried my hand at the Nangara, which has a very
+                special place in the great Banjara culture. Our Government will
+                make every possible effort to make this culture even more
+                popular in the times to come.
+              </div>
+              <div class="post-video">
+                <video width="100%" height="436" controls autoplay muted>
+                  <source src="/post/a2WR4gk2rm3y52cu.mp4" type="" />
+                </video>
+              </div>
+
+              <div>
+                <div class="bottom-icon">
+                  <i class="bi bi-chat">17k</i>
+                  <i class="bi bi-repeat">58k</i>
+                  <i class="bi bi-heart">586k</i>
+                  <i class="bi bi-bar-chart-fill">40M</i>
+                  <div class="upload-icon">
+                    <i class="bi bi-bookmark"></i>
+                    <i class="bi bi-upload"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post4">
+            <div class="user-icon">
+              <img src="/icons/mongo.png" alt="" />
+            </div>
+            <div class="post-info">
+              <div class="heading">
+                <div class="hashtag">
+                  MongoDB <i class="bi bi-patch-check"></i>
+                  <span>@MongoDB . oct4</span>
+                </div>
+                <div class="hashtag1"><i class="bi bi-three-dots"></i></div>
+              </div>
+              <div class="content4">
+                They choose an underlying storage solution with endless
+                scalability. MongoDB’s flexible document model enabled
+                <a href="https://x.com/stripe">@stripe</a> to build DocDB - a
+                scalable DBaaS that can handle real-time data at scale..
+              </div>
+
+              <div class="post-img3"><img src="post/mongo.jfif" alt="" /></div>
+
+              <div>
+                <div class="bottom-icon">
+                  <i class="bi bi-chat">17k</i>
+                  <i class="bi bi-repeat">58k</i>
+                  <i class="bi bi-heart">586k</i>
+                  <i class="bi bi-bar-chart-fill">40M</i>
+                  <div class="upload-icon">
+                  <i class="bi bi-bookmark"></i>
+                  <i class="bi bi-upload"></i>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post5">
+            <div class="user-icon">
+              <img src="/icons/elonicon.jpg" alt="" />
+            </div>
+            <div class="post-info">
+              <div class="heading">
+                <div class="hashtag">
+                  Elon Musk <i class="bi bi-patch-check"></i>
+                  <span>@elonmask .oct11</span>
+                </div>
+                <div class="hashtag1"><i class="bi bi-three-dots"></i></div>
+              </div>
+              <div>
+                This is the actual interior of the Robobus/van.
+                
+              </div>
+              
+              <div class="post5-img"><img src="post/elon1.jpg" alt="" /></div>
+              
+              <div>
+                <div class="bottom-icon">
+                  <i class="bi bi-chat">17k</i>
+                  <i class="bi bi-repeat">58k</i>
+                  <i class="bi bi-heart">595k</i>
+                  <i class="bi bi-bar-chart-fill">40M</i>
+                  <div class="upload-icon">
+                  <i class="bi bi-bookmark"></i>
+                  <i class="bi bi-upload"></i>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="footer-icons"><i class="fa-solid fa-house"></i></div>
+            <div class="footer-icons"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="footer-icons"><i class="fa-regular fa-bookmark"></i></div>
+            <div class="footer-icons"><i class="fa-regular fa-bell"></i></div>
+            <div class="footer-icons"><i class="fa-regular fa-envelope"></i></div>
+            <div class="footer-icons" ><i class="bi bi-people"></i></div>
+          </footer>
+
+
+        </div>
+        <!--  -->
+        <div class="section2">
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" name="search-box" placeholder="Search" />
+          </div>
+          <div class="subscribe-prem">
+            <h3>Subscribe To Premium</h3>
+            <p>
+              Subscribe to unlock new features and if eligible, receive a share
+              of ads revenue.
+            </p>
+            <button>Subscribe</button>
+          </div>
+          <div class="happening">
+            <h3>What's happeining</h3>
+            <div class="box-container">
+              <div class="Wspeed"><img src="/icons/raw.jfif" alt="" /></div>
+              <div class="contain-1">
+                <h4>WWE Speed</h4>
+                <p>Wrestling | Every Wednesday . Last night</p>
+              </div>
+            </div>
+            <div class="box-2">
+              <div>
+                <p>Business & finance . Trending</p>
+                <h4>#RatanTataSir</h4>
+                <p>Trending with <a href="#">#RestInPeace, NCPA</a></p>
+              </div>
+              <div class="thrre-dots"><i class="bi bi-three-dots"></i></div>
+            </div>
+
+            <div class="box-2">
+              <div>
+                <p>Business & finance . Trending</p>
+                <h4>#MukeshAmbani</h4>
+                <p>1,469 posts</p>
+              </div>
+              <div class="thrre-dots"><i class="bi bi-three-dots"></i></div>
+            </div>
+
+            <div class="box-2">
+              <div>
+                <p>Business & finance . Trending</p>
+                <h4>#ShantanuNaidu</h4>
+                <p>3,904 posts</p>
+              </div>
+              <div class="thrre-dots"><i class="bi bi-three-dots"></i></div>
+            </div>
+
+            <div class="box-2">
+              <div>
+                <p>Business & finance . Trending</p>
+                <h4>Parsi</h4>
+                <p>2,789 posts</p>
+              </div>
+              <div class="thrre-dots"><i class="bi bi-three-dots"></i></div>
+            </div>
+            <h4 class="show-more">Show more</h4>
+          </div>
+
+          <div class="who-follow">
+            <h3>Who To Follow</h3>
+            <div class="container-box2">
+                <div class="last-box" >
+              <img src="/icons/sideimage1.jpg" alt=""/>
+                </div>
+                <div class="child-containerbox1">
+                    <div class="child">
+              <p class="card-1" id="color-card">AssemnlyAi <i class="bi bi-patch-check"></i></p>
+              <p class="decorat">AssemblyAI</p>
+            </div>
+              <div>
+                <button>Follow</button>
+              </div>
+            </div>
+            </div>
+
+            <div class="container-box2">
+                <div class="last-box" >
+              <img src="/icons/tv9.jpg" alt=""/>
+                </div>
+                <div class="child-containerbox1">
+                    <div class="child">
+              <p class="card-1">TV9 Marathi <i class="bi bi-patch-check"></i></p>
+              <p class="decorat">@TV9Marathi</p>
+            </div>
+              <div>
+                <button>Follow</button>
+              </div>
+            </div>
+            </div>
+
+            <div class="container-box2">
+                <div class="last-box" >
+              <img src="/icons/bill-gates.jpg" alt=""/>
+                </div>
+                <div class="child-containerbox1">
+                    <div class="child">
+              <p class="card-1">Bill Gates <i class="bi bi-patch-check"></i></p>
+              <p class="decorat">@bill Gates</p>
+            </div>
+              <div>
+                <button>Follow</button>
+              </div>
+            </div>
+            </div>
+
+            <p class="show-more-2">Show more</p>
+
+
+            </div>
+           <div class="policy-services">
+            <div>
+              <span>Term of Service</span>
+              <span>Privacy Policy</span>
+              <span>Cookie Policy</span>
+            </div>
+            <div>
+              <span>Accessibility</span>
+              <span>Ads info</span>
+              <span>More ...</span>
+              <span>&copy 2024 X Corp.</span>
+
+            </div>
+            
+           </div>
+        
+
+            
+
+         </div>
+      </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
