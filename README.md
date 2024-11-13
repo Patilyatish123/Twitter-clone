@@ -4,7 +4,7 @@ A basic Twitter clone created with HTML, CSS, and JavaScript to replicate the co
 
 ## Project Demo
 ### Deployment
-The project is deployed on Netlify, and you can access it directly from [here](https://twitter-clone-yatishp.netlify.app/).
+The project is deployed on Netlify, and you can access it directly from [here](https://twitter-clone-yatishp.vercel.app/).
 
 ## Features
 
